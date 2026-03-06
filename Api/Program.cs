@@ -49,15 +49,15 @@ if (app.Environment.IsDevelopment())
     app.Services.ApplyMigrations();
 }
 
-app.UseOpenTelemetryPrometheusScrapingEndpoint("/api/sensor-ingestion/metrics");
+app.UseOpenTelemetryPrometheusScrapingEndpoint("/api/sensors/metrics");
 
 app.UseMiddleware<RequestLogContextMiddleware>();
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
-
 app.UseAuthentication();
+
+app.UseAuthorization();
 
 app.UseExceptionHandler();
 
