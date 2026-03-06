@@ -11,7 +11,7 @@ public class RabbitMQPublisher : IMessagePublisher, IDisposable
 {
     private readonly IConnection _connection;
     private readonly IModel _channel;
-    private const string ExchangeName = "sensor_data_exchange";
+    private const string ExchangeName = "sensor_events";
 
     public RabbitMQPublisher(RabbitMQSettings rabbitMQSettings)
     {

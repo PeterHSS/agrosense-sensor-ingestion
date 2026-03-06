@@ -1,3 +1,3 @@
 ﻿namespace Api.Domain.Events;
 
-public record SensorDataIngestedEvent(Guid id, Guid plotId, double soilMoisture, double temperature, double precipitation, DateTime timestamp);
+public record SensorDataIngestedEvent(Guid Id, Guid PlotId, double SoilMoisture, double Temperature, double Precipitation, DateTime Timestamp);
