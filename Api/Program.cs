@@ -49,7 +49,7 @@ if (app.Environment.IsDevelopment())
     app.Services.ApplyMigrations();
 }
 
-app.UseOpenTelemetryPrometheusScrapingEndpoint("/api/sensors/metrics");
+app.UseOpenTelemetryPrometheusScrapingEndpoint("/api/metrics/sensors");
 
 app.UseMiddleware<RequestLogContextMiddleware>();
 
