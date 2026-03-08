@@ -125,7 +125,7 @@ public static class DependencyInjectionExtension
 
     private static IServiceCollection AddContexts(this IServiceCollection services, IConfiguration configuration)
     {
-        var connectionString = configuration.GetConnectionString("Default") ?? throw new InvalidOperationException("ConnectionString not configured.");
+        var connectionString = configuration.GetConnectionString("Sensor") ?? throw new InvalidOperationException("ConnectionString not configured.");
 
         services.AddDbContext<SensorDbContext>(options => options.UseNpgsql(connectionString));
 
