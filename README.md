@@ -123,7 +123,6 @@ O repositório utiliza **GitHub Actions** (`.github/workflows/`) para:
 
 - Build e testes automáticos a cada push
 - Build e push da imagem Docker para o registry
-- Deploy automatizado no cluster Kubernetes
 
 ---
 
